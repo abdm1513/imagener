@@ -1,5 +1,4 @@
 import { Document, model, models, Schema } from "mongoose";
-import { ObjectId } from 'mongoose';  // Ensure ObjectId is imported from mongoose
 
 export interface IImage extends Document {
   title: string;
@@ -8,7 +7,7 @@ export interface IImage extends Document {
   secureUrl: string;
   width?: number;
   height?: number;
-  config?: Record<string, any>;  // A more flexible object type for config
+  config?: object;  // A more flexible object type for config
   transformationUrl?: string;
   aspectRatio?: string;
   color?: string;
