@@ -1,5 +1,4 @@
 import { Document, model, models, Schema } from "mongoose";
-import { ObjectId } from 'mongoose';  // Ensure ObjectId is imported from mongoose
 
 export interface IImage extends Document {
   title: string;
